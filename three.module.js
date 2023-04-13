@@ -25114,7 +25114,7 @@ function WebGLRenderer( parameters ) {
 					_gl.readPixels(x, y, width, height, utils.convert( textureFormat ), utils.convert( textureType ), 0);
 					_gl.bindBuffer(_gl.PIXEL_PACK_BUFFER, null);
 					
-					getBufferSubDataAsync(_gl, buf, 0, buffer).finally(() => _gl.deleteBuffer(buf) )						
+					await getBufferSubDataAsync(_gl, buf, 0, buffer).finally(() => _gl.deleteBuffer(buf) )						
 
 				}
 
