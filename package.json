@@ -1,7 +1,7 @@
 {
   "name": "mtech-three",
-  "version": "1.0.0",
-  "description": "r123 - revision",
+  "version": "1.0.1",
+  "description": "r157 - revision",
   "main": "three.module.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
