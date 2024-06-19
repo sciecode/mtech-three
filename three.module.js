@@ -31216,11 +31216,11 @@ class WebGLRenderer {
 			_gl.pixelStorei( _gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, dstTexture.premultiplyAlpha );
 			_gl.pixelStorei( _gl.UNPACK_ALIGNMENT, dstTexture.unpackAlignment );
 
-			const unpackRowLen = _gl.getParameter( _gl.UNPACK_ROW_LENGTH );
-			const unpackImageHeight = _gl.getParameter( _gl.UNPACK_IMAGE_HEIGHT );
-			const unpackSkipPixels = _gl.getParameter( _gl.UNPACK_SKIP_PIXELS );
-			const unpackSkipRows = _gl.getParameter( _gl.UNPACK_SKIP_ROWS );
-			const unpackSkipImages = _gl.getParameter( _gl.UNPACK_SKIP_IMAGES );
+			// const unpackRowLen = _gl.getParameter( _gl.UNPACK_ROW_LENGTH );
+			// const unpackImageHeight = _gl.getParameter( _gl.UNPACK_IMAGE_HEIGHT );
+			// const unpackSkipPixels = _gl.getParameter( _gl.UNPACK_SKIP_PIXELS );
+			// const unpackSkipRows = _gl.getParameter( _gl.UNPACK_SKIP_ROWS );
+			// const unpackSkipImages = _gl.getParameter( _gl.UNPACK_SKIP_IMAGES );
 
 			const image = srcTexture.isCompressedTexture ? srcTexture.mipmaps[ level ] : srcTexture.image;
 
@@ -31249,11 +31249,11 @@ class WebGLRenderer {
 
 			}
 
-			_gl.pixelStorei( _gl.UNPACK_ROW_LENGTH, unpackRowLen );
-			_gl.pixelStorei( _gl.UNPACK_IMAGE_HEIGHT, unpackImageHeight );
-			_gl.pixelStorei( _gl.UNPACK_SKIP_PIXELS, unpackSkipPixels );
-			_gl.pixelStorei( _gl.UNPACK_SKIP_ROWS, unpackSkipRows );
-			_gl.pixelStorei( _gl.UNPACK_SKIP_IMAGES, unpackSkipImages );
+			// _gl.pixelStorei( _gl.UNPACK_ROW_LENGTH, unpackRowLen );
+			// _gl.pixelStorei( _gl.UNPACK_IMAGE_HEIGHT, unpackImageHeight );
+			// _gl.pixelStorei( _gl.UNPACK_SKIP_PIXELS, unpackSkipPixels );
+			// _gl.pixelStorei( _gl.UNPACK_SKIP_ROWS, unpackSkipRows );
+			// _gl.pixelStorei( _gl.UNPACK_SKIP_IMAGES, unpackSkipImages );
 
 			// Generate mipmaps only when copying level 0
 			if ( level === 0 && dstTexture.generateMipmaps ) _gl.generateMipmap( glTarget );
