@@ -1,6 +1,6 @@
 {
   "name": "mtech-three",
-  "version": "1.161.2",
+  "version": "1.161.3",
   "description": "r161 - revision",
   "main": "three.module.js",
   "scripts": {
