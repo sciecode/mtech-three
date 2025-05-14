@@ -13361,6 +13361,12 @@ class Frustum {
 			if ( object.boundingSphere === null ) object.computeBoundingSphere();
 
 			_sphere$5.copy( object.boundingSphere ).applyMatrix4( object.matrixWorld );
+			
+			if ( object.trans && object.trans.value != undefined ) {
+
+				_sphere$5.center.z *= object.trans.value;
+
+			}
 
 		} else {
 
